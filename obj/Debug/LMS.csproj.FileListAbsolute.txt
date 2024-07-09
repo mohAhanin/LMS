@@ -1,0 +1,13 @@
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.csproj.AssemblyReference.cache
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.Form1.resources
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.Properties.Resources.resources
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.csproj.GenerateResource.cache
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.csproj.CoreCompileInputs.cache
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.AdminDashboardForm.resources
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.ProfessorDashboardForm.resources
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.StudentDashboardForm.resources
+C:\Users\IDEH\source\repos\LMS\bin\Debug\LMS.exe.config
+C:\Users\IDEH\source\repos\LMS\bin\Debug\LMS.exe
+C:\Users\IDEH\source\repos\LMS\bin\Debug\LMS.pdb
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.exe
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.pdb
