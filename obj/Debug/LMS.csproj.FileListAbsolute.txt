@@ -11,3 +11,4 @@ C:\Users\IDEH\source\repos\LMS\bin\Debug\LMS.exe
 C:\Users\IDEH\source\repos\LMS\bin\Debug\LMS.pdb
 C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.exe
 C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.pdb
+C:\Users\IDEH\source\repos\LMS\obj\Debug\LMS.AddCourseForm.resources

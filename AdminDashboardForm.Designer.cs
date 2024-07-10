@@ -44,6 +44,19 @@
             this.btnDeleteStudent = new System.Windows.Forms.Button();
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.btnLoadData = new System.Windows.Forms.Button();
+            this.lblUserID2 = new System.Windows.Forms.Label();
+            this.lblPassword2 = new System.Windows.Forms.Label();
+            this.lblPID = new System.Windows.Forms.Label();
+            this.lblPName = new System.Windows.Forms.Label();
+            this.txtUserID2 = new System.Windows.Forms.TextBox();
+            this.txtPassword2 = new System.Windows.Forms.TextBox();
+            this.txtPID = new System.Windows.Forms.TextBox();
+            this.txtPName = new System.Windows.Forms.TextBox();
+            this.btnAddProfessor = new System.Windows.Forms.Button();
+            this.lblDeletePID = new System.Windows.Forms.Label();
+            this.txtDeletePID = new System.Windows.Forms.TextBox();
+            this.btnDeleteProfessor = new System.Windows.Forms.Button();
+            this.btnAddCourseForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +85,7 @@
             // lblUserID
             // 
             this.lblUserID.AutoSize = true;
-            this.lblUserID.Location = new System.Drawing.Point(575, 33);
+            this.lblUserID.Location = new System.Drawing.Point(509, 38);
             this.lblUserID.Name = "lblUserID";
             this.lblUserID.Size = new System.Drawing.Size(49, 16);
             this.lblUserID.TabIndex = 2;
@@ -82,7 +95,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(664, 33);
+            this.lblPassword.Location = new System.Drawing.Point(509, 62);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(67, 16);
             this.lblPassword.TabIndex = 3;
@@ -92,7 +105,7 @@
             // lblStdID
             // 
             this.lblStdID.AutoSize = true;
-            this.lblStdID.Location = new System.Drawing.Point(771, 33);
+            this.lblStdID.Location = new System.Drawing.Point(509, 91);
             this.lblStdID.Name = "lblStdID";
             this.lblStdID.Size = new System.Drawing.Size(68, 16);
             this.lblStdID.TabIndex = 4;
@@ -102,7 +115,7 @@
             // lblStdName
             // 
             this.lblStdName.AutoSize = true;
-            this.lblStdName.Location = new System.Drawing.Point(889, 33);
+            this.lblStdName.Location = new System.Drawing.Point(509, 121);
             this.lblStdName.Name = "lblStdName";
             this.lblStdName.Size = new System.Drawing.Size(92, 16);
             this.lblStdName.TabIndex = 5;
@@ -111,31 +124,31 @@
             // 
             // txtUserID
             // 
-            this.txtUserID.Location = new System.Drawing.Point(578, 85);
+            this.txtUserID.Location = new System.Drawing.Point(607, 35);
             this.txtUserID.Name = "txtUserID";
-            this.txtUserID.Size = new System.Drawing.Size(46, 22);
+            this.txtUserID.Size = new System.Drawing.Size(89, 22);
             this.txtUserID.TabIndex = 6;
             this.txtUserID.TextChanged += new System.EventHandler(this.txtUserID_TextChanged);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(667, 85);
+            this.txtPassword.Location = new System.Drawing.Point(607, 63);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(64, 22);
+            this.txtPassword.Size = new System.Drawing.Size(89, 22);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtStdID
             // 
-            this.txtStdID.Location = new System.Drawing.Point(774, 85);
+            this.txtStdID.Location = new System.Drawing.Point(607, 91);
             this.txtStdID.Name = "txtStdID";
-            this.txtStdID.Size = new System.Drawing.Size(65, 22);
+            this.txtStdID.Size = new System.Drawing.Size(89, 22);
             this.txtStdID.TabIndex = 8;
             this.txtStdID.TextChanged += new System.EventHandler(this.txtStdID_TextChanged);
             // 
             // txtStdName
             // 
-            this.txtStdName.Location = new System.Drawing.Point(892, 85);
+            this.txtStdName.Location = new System.Drawing.Point(607, 119);
             this.txtStdName.Name = "txtStdName";
             this.txtStdName.Size = new System.Drawing.Size(89, 22);
             this.txtStdName.TabIndex = 9;
@@ -143,9 +156,9 @@
             // 
             // btnAddStudent
             // 
-            this.btnAddStudent.Location = new System.Drawing.Point(667, 140);
+            this.btnAddStudent.Location = new System.Drawing.Point(512, 160);
             this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(172, 40);
+            this.btnAddStudent.Size = new System.Drawing.Size(184, 27);
             this.btnAddStudent.TabIndex = 10;
             this.btnAddStudent.Text = "Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = true;
@@ -153,7 +166,7 @@
             // lblDeleteStdID
             // 
             this.lblDeleteStdID.AutoSize = true;
-            this.lblDeleteStdID.Location = new System.Drawing.Point(702, 265);
+            this.lblDeleteStdID.Location = new System.Drawing.Point(769, 41);
             this.lblDeleteStdID.Name = "lblDeleteStdID";
             this.lblDeleteStdID.Size = new System.Drawing.Size(95, 16);
             this.lblDeleteStdID.TabIndex = 11;
@@ -162,7 +175,7 @@
             // 
             // txtDeleteStdID
             // 
-            this.txtDeleteStdID.Location = new System.Drawing.Point(699, 306);
+            this.txtDeleteStdID.Location = new System.Drawing.Point(892, 41);
             this.txtDeleteStdID.Name = "txtDeleteStdID";
             this.txtDeleteStdID.Size = new System.Drawing.Size(100, 22);
             this.txtDeleteStdID.TabIndex = 12;
@@ -171,7 +184,7 @@
             // 
             // btnDeleteStudent
             // 
-            this.btnDeleteStudent.Location = new System.Drawing.Point(696, 349);
+            this.btnDeleteStudent.Location = new System.Drawing.Point(772, 77);
             this.btnDeleteStudent.Name = "btnDeleteStudent";
             this.btnDeleteStudent.Size = new System.Drawing.Size(107, 44);
             this.btnDeleteStudent.TabIndex = 13;
@@ -182,7 +195,7 @@
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(84, 394);
+            this.dgvData.Location = new System.Drawing.Point(84, 305);
             this.dgvData.Name = "dgvData";
             this.dgvData.RowHeadersWidth = 51;
             this.dgvData.RowTemplate.Height = 24;
@@ -192,7 +205,7 @@
             // 
             // btnLoadData
             // 
-            this.btnLoadData.Location = new System.Drawing.Point(168, 345);
+            this.btnLoadData.Location = new System.Drawing.Point(168, 256);
             this.btnLoadData.Name = "btnLoadData";
             this.btnLoadData.Size = new System.Drawing.Size(122, 34);
             this.btnLoadData.TabIndex = 15;
@@ -200,9 +213,132 @@
             this.btnLoadData.UseVisualStyleBackColor = true;
             this.btnLoadData.Click += new System.EventHandler(this.btnLoadData_Click);
             // 
+            // lblUserID2
+            // 
+            this.lblUserID2.AutoSize = true;
+            this.lblUserID2.Location = new System.Drawing.Point(514, 265);
+            this.lblUserID2.Name = "lblUserID2";
+            this.lblUserID2.Size = new System.Drawing.Size(47, 16);
+            this.lblUserID2.TabIndex = 16;
+            this.lblUserID2.Text = "user id";
+            // 
+            // lblPassword2
+            // 
+            this.lblPassword2.AutoSize = true;
+            this.lblPassword2.Location = new System.Drawing.Point(514, 305);
+            this.lblPassword2.Name = "lblPassword2";
+            this.lblPassword2.Size = new System.Drawing.Size(66, 16);
+            this.lblPassword2.TabIndex = 17;
+            this.lblPassword2.Text = "password";
+            // 
+            // lblPID
+            // 
+            this.lblPID.AutoSize = true;
+            this.lblPID.Location = new System.Drawing.Point(514, 354);
+            this.lblPID.Name = "lblPID";
+            this.lblPID.Size = new System.Drawing.Size(79, 16);
+            this.lblPID.TabIndex = 18;
+            this.lblPID.Text = "Professor id";
+            // 
+            // lblPName
+            // 
+            this.lblPName.AutoSize = true;
+            this.lblPName.Location = new System.Drawing.Point(514, 398);
+            this.lblPName.Name = "lblPName";
+            this.lblPName.Size = new System.Drawing.Size(105, 16);
+            this.lblPName.TabIndex = 19;
+            this.lblPName.Text = "Professor Name";
+            // 
+            // txtUserID2
+            // 
+            this.txtUserID2.Location = new System.Drawing.Point(663, 265);
+            this.txtUserID2.Name = "txtUserID2";
+            this.txtUserID2.Size = new System.Drawing.Size(100, 22);
+            this.txtUserID2.TabIndex = 20;
+            // 
+            // txtPassword2
+            // 
+            this.txtPassword2.Location = new System.Drawing.Point(663, 305);
+            this.txtPassword2.Name = "txtPassword2";
+            this.txtPassword2.Size = new System.Drawing.Size(100, 22);
+            this.txtPassword2.TabIndex = 21;
+            // 
+            // txtPID
+            // 
+            this.txtPID.Location = new System.Drawing.Point(663, 348);
+            this.txtPID.Name = "txtPID";
+            this.txtPID.Size = new System.Drawing.Size(100, 22);
+            this.txtPID.TabIndex = 22;
+            // 
+            // txtPName
+            // 
+            this.txtPName.Location = new System.Drawing.Point(663, 395);
+            this.txtPName.Name = "txtPName";
+            this.txtPName.Size = new System.Drawing.Size(100, 22);
+            this.txtPName.TabIndex = 23;
+            // 
+            // btnAddProfessor
+            // 
+            this.btnAddProfessor.Location = new System.Drawing.Point(512, 434);
+            this.btnAddProfessor.Name = "btnAddProfessor";
+            this.btnAddProfessor.Size = new System.Drawing.Size(184, 32);
+            this.btnAddProfessor.TabIndex = 24;
+            this.btnAddProfessor.Text = "Add Professor";
+            this.btnAddProfessor.UseVisualStyleBackColor = true;
+            this.btnAddProfessor.Click += new System.EventHandler(this.btnAddProfessor_Click);
+            // 
+            // lblDeletePID
+            // 
+            this.lblDeletePID.AutoSize = true;
+            this.lblDeletePID.Location = new System.Drawing.Point(825, 265);
+            this.lblDeletePID.Name = "lblDeletePID";
+            this.lblDeletePID.Size = new System.Drawing.Size(81, 16);
+            this.lblDeletePID.TabIndex = 25;
+            this.lblDeletePID.Text = "Professor ID";
+            // 
+            // txtDeletePID
+            // 
+            this.txtDeletePID.Location = new System.Drawing.Point(828, 305);
+            this.txtDeletePID.Name = "txtDeletePID";
+            this.txtDeletePID.Size = new System.Drawing.Size(100, 22);
+            this.txtDeletePID.TabIndex = 26;
+            // 
+            // btnDeleteProfessor
+            // 
+            this.btnDeleteProfessor.Location = new System.Drawing.Point(828, 354);
+            this.btnDeleteProfessor.Name = "btnDeleteProfessor";
+            this.btnDeleteProfessor.Size = new System.Drawing.Size(118, 38);
+            this.btnDeleteProfessor.TabIndex = 27;
+            this.btnDeleteProfessor.Text = "Delete Professor";
+            this.btnDeleteProfessor.UseVisualStyleBackColor = true;
+            this.btnDeleteProfessor.Click += new System.EventHandler(this.btnDeleteProfessor_Click);
+            // 
+            // btnAddCourseForm
+            // 
+            this.btnAddCourseForm.Location = new System.Drawing.Point(115, 533);
+            this.btnAddCourseForm.Name = "btnAddCourseForm";
+            this.btnAddCourseForm.Size = new System.Drawing.Size(175, 63);
+            this.btnAddCourseForm.TabIndex = 28;
+            this.btnAddCourseForm.Text = "Add Course";
+            this.btnAddCourseForm.UseVisualStyleBackColor = true;
+            this.btnAddCourseForm.Click += new System.EventHandler(this.btnAddCourseForm_Click);
+            // 
             // AdminDashboardForm
             // 
-            this.ClientSize = new System.Drawing.Size(1068, 608);
+            this.ClientSize = new System.Drawing.Size(1068, 628);
+            this.Controls.Add(this.btnAddCourseForm);
+            this.Controls.Add(this.btnDeleteProfessor);
+            this.Controls.Add(this.txtDeletePID);
+            this.Controls.Add(this.lblDeletePID);
+            this.Controls.Add(this.btnAddProfessor);
+            this.Controls.Add(this.txtPName);
+            this.Controls.Add(this.txtPID);
+            this.Controls.Add(this.txtPassword2);
+            this.Controls.Add(this.txtUserID2);
+            this.Controls.Add(this.lblPName);
+            this.Controls.Add(this.lblPID);
+            this.Controls.Add(this.lblPassword2);
+            this.Controls.Add(this.lblUserID2);
             this.Controls.Add(this.btnLoadData);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.btnDeleteStudent);
@@ -246,6 +382,19 @@
         private System.Windows.Forms.Button btnDeleteStudent;
         private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Button btnLoadData;
+        private System.Windows.Forms.Label lblUserID2;
+        private System.Windows.Forms.Label lblPassword2;
+        private System.Windows.Forms.Label lblPID;
+        private System.Windows.Forms.Label lblPName;
+        private System.Windows.Forms.TextBox txtUserID2;
+        private System.Windows.Forms.TextBox txtPassword2;
+        private System.Windows.Forms.TextBox txtPID;
+        private System.Windows.Forms.TextBox txtPName;
+        private System.Windows.Forms.Button btnAddProfessor;
+        private System.Windows.Forms.Label lblDeletePID;
+        private System.Windows.Forms.TextBox txtDeletePID;
+        private System.Windows.Forms.Button btnDeleteProfessor;
+        private System.Windows.Forms.Button btnAddCourseForm;
     }
 
     }

@@ -18,7 +18,7 @@ namespace LMS
             this.FormClosed += new FormClosedEventHandler(AdminDashboardForm_FormClosed);
             this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             this.btnDeleteStudent.Click += new System.EventHandler(this.btnDeleteStudent_Click);
-
+            this.btnAddCourseForm.Click += new System.EventHandler(this.btnAddCourseForm_Click);
 
         }
 
@@ -221,11 +221,89 @@ namespace LMS
                 }
             }
         }
-    
 
-    private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnAddProfessor_Click(object sender, EventArgs e)
+        {
+            int userID = int.Parse(txtUserID2.Text);
+            string password = txtPassword2.Text;
+            int pID = int.Parse(txtPID.Text);
+            string pName = txtPName.Text;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    string query1 = "INSERT INTO Users (userID, Password, Role) VALUES (@userID, @Password, 'professor')";
+                    string query2 = "INSERT INTO Professors (userID, PID, PName) VALUES (@userID, @PID, @PName)";
+
+                    SqlCommand cmd1 = new SqlCommand(query1, connection);
+                    cmd1.Parameters.AddWithValue("@userID", userID);
+                    cmd1.Parameters.AddWithValue("@Password", password);
+
+                    SqlCommand cmd2 = new SqlCommand(query2, connection);
+                    cmd2.Parameters.AddWithValue("@userID", userID);
+                    cmd2.Parameters.AddWithValue("@PID", pID);
+                    cmd2.Parameters.AddWithValue("@PName", pName);
+
+                    cmd1.ExecuteNonQuery();
+                    cmd2.ExecuteNonQuery();
+
+                    MessageBox.Show("Professor added successfully!");
+
+                    // Refresh the DataGridView
+                    btnLoadUsers_Click(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnDeleteProfessor_Click(object sender, EventArgs e)
+        {
+            int pID = int.Parse(txtDeletePID.Text);
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    string query1 = "DELETE FROM Professors WHERE PID = @PID";
+                    string query2 = "DELETE FROM Users WHERE userID = (SELECT userID FROM Professors WHERE PID = @PID)";
+
+                    SqlCommand cmd1 = new SqlCommand(query1, connection);
+                    cmd1.Parameters.AddWithValue("@PID", pID);
+
+                    SqlCommand cmd2 = new SqlCommand(query2, connection);
+                    cmd2.Parameters.AddWithValue("@PID", pID);
+
+                    cmd1.ExecuteNonQuery();
+                    cmd2.ExecuteNonQuery();
+
+                    MessageBox.Show("Professor deleted successfully!");
+
+                    // Refresh the DataGridView
+                    btnLoadUsers_Click(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnAddCourseForm_Click(object sender, EventArgs e)
+        {
+            AddCourseForm addCourseForm = new AddCourseForm(userID);
+            addCourseForm.Show();
         }
     }
 }

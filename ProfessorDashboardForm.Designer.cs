@@ -36,9 +36,10 @@
             // 
             // btnManageCourse
             // 
-            this.btnManageCourse.Location = new System.Drawing.Point(220, 230);
+            this.btnManageCourse.Location = new System.Drawing.Point(293, 283);
+            this.btnManageCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManageCourse.Name = "btnManageCourse";
-            this.btnManageCourse.Size = new System.Drawing.Size(120, 30);
+            this.btnManageCourse.Size = new System.Drawing.Size(160, 37);
             this.btnManageCourse.TabIndex = 0;
             this.btnManageCourse.Text = "Manage Course";
             this.btnManageCourse.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(350, 230);
+            this.btnRefresh.Location = new System.Drawing.Point(467, 283);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(100, 30);
+            this.btnRefresh.Size = new System.Drawing.Size(133, 37);
             this.btnRefresh.TabIndex = 1;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -56,9 +58,10 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(460, 230);
+            this.btnLogout.Location = new System.Drawing.Point(613, 283);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(100, 30);
+            this.btnLogout.Size = new System.Drawing.Size(133, 37);
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -66,9 +69,10 @@
             // 
             // btnViewCourseStudents
             // 
-            this.btnViewCourseStudents.Location = new System.Drawing.Point(270, 270);
+            this.btnViewCourseStudents.Location = new System.Drawing.Point(360, 332);
+            this.btnViewCourseStudents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnViewCourseStudents.Name = "btnViewCourseStudents";
-            this.btnViewCourseStudents.Size = new System.Drawing.Size(150, 30);
+            this.btnViewCourseStudents.Size = new System.Drawing.Size(200, 37);
             this.btnViewCourseStudents.TabIndex = 3;
             this.btnViewCourseStudents.Text = "View Course Students";
             this.btnViewCourseStudents.UseVisualStyleBackColor = true;
@@ -76,16 +80,18 @@
             // 
             // ProfessorDashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 550);
+            this.ClientSize = new System.Drawing.Size(1057, 753);
             this.Controls.Add(this.btnManageCourse);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnViewCourseStudents);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProfessorDashboardForm";
             this.Text = "Professor Dashboard";
             this.ResumeLayout(false);
+
         }
 
         #endregion
